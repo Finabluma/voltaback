@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_reservas_condicions",
+  "info": {
+    "displayName": "condicion",
+    "description": "",
+    "icon": "balance-scale"
+  },
+  "options": {},
+  "attributes": {
+    "contenido": {
+      "type": "text",
+      "maxLength": 500
+    }
+  }
+}

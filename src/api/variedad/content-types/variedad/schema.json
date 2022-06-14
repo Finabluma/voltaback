@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "variedades",
+  "info": {
+    "singularName": "variedad",
+    "pluralName": "variedades",
+    "displayName": "Variedades",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "vinos_tintos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::vinos-tinto.vinos-tinto",
+      "inversedBy": "variedades"
+    },
+    "vinos_rosados": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::vinos-rosado.vinos-rosado",
+      "inversedBy": "variedades"
+    },
+    "vinos_cavas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::cava.cava",
+      "inversedBy": "variedades"
+    },
+    "vinos_blancos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::vinos-blanco.vinos-blanco",
+      "inversedBy": "variedades"
+    }
+  }
+}

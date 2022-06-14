@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "condiciones_reservas",
+  "info": {
+    "singularName": "condicion-reserva",
+    "pluralName": "condiciones-reservas",
+    "displayName": "Condiciones Reservas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "condiciones": {
+      "type": "dynamiczone",
+      "components": [
+        "reservas.condicion"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "nombre": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    }
+  }
+}

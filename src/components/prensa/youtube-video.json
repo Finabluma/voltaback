@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_prensa_youtube_videos",
+  "info": {
+    "displayName": "Youtube Video",
+    "icon": "video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    }
+  }
+}

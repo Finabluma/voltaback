@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "platos_carpaccios",
+  "info": {
+    "singularName": "platos-carpaccio",
+    "pluralName": "platos-carpaccios",
+    "displayName": "Platos Carpaccio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "unique": true,
+      "required": true
+    },
+    "Precio": {
+      "type": "decimal",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

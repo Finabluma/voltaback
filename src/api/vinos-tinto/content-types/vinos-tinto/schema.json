@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vinos_tintos",
+  "info": {
+    "singularName": "vinos-tinto",
+    "pluralName": "vinos-tintos",
+    "displayName": "Vinos Tintos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Nombre": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Precio": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "decimal"
+    },
+    "DO": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::denominacion.denominacion"
+    },
+    "variedades": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::variedad.variedad",
+      "inversedBy": "vinos_tintos"
+    }
+  }
+}

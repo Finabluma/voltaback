@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_prensa_prensa_relacionadas",
+  "info": {
+    "displayName": "Prensa Relacionada",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "intro": {
+      "type": "string"
+    },
+    "prensas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::prensa.prensa"
+    }
+  }
+}
