@@ -14,9 +14,9 @@
     "@strapi/plugin-graphql": "^4.1.12",
     "@strapi/plugin-i18n": "4.1.12",
     "@strapi/plugin-users-permissions": "4.1.12",
+    "@strapi/provider-upload-cloudinary": "^4.1.12",
     "@strapi/strapi": "4.1.12",
     "mysql": "2.18.1",
-    "pg": "^8.7.3",
     "slugify": "^1.6.5"
   },
   "author": {
