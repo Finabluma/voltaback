@@ -46,16 +46,29 @@
       },
       "component": "shared.seo"
     },
-    "prensarelacionada": {
-      "displayName": "Prensa Relacionada",
-      "type": "component",
-      "repeatable": false,
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "contenido": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "prensa.prensa-relacionada"
+      "type": "richtext"
     },
     "video": {
       "displayName": "Youtube Video",
@@ -68,8 +81,14 @@
       },
       "component": "prensa.youtube-video"
     },
-    "contenido": {
-      "displayName": "Contenido Principal",
+    "etiquetas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::etiqueta.etiqueta",
+      "inversedBy": "articulosprensa"
+    },
+    "prensarelacionada": {
+      "displayName": "Prensa Relacionada",
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -77,13 +96,7 @@
           "localized": true
         }
       },
-      "component": "prensa.contenido-principal"
-    },
-    "etiquetas": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::etiqueta.etiqueta",
-      "inversedBy": "articulosprensa"
+      "component": "prensa.prensa-relacionada"
     }
   }
 }

@@ -26,14 +26,15 @@
       "required": true,
       "unique": true
     },
-    "Slug": {
+    "slug": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
       "type": "uid",
-      "required": false
+      "required": false,
+      "targetField": "nombre"
     },
     "articulosprensa": {
       "type": "relation",
